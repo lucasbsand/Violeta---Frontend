@@ -10,7 +10,7 @@ export default function FormLogin() {
         <S.Input type='password' placeholder='Insira a sua senha... ' />
         <S.SubmitButton type='submit'>ENTRAR</S.SubmitButton>
       </S.FormContainer>
-      <S.LinkTo>Ainda sem conta? Se registre!</S.LinkTo>
+      <S.LinkTo to="/register">Ainda sem conta? Se registre!</S.LinkTo>
     </S.ContainerPai>
   );
 }
