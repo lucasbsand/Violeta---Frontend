@@ -1,10 +1,11 @@
-import HomePrimeira from './pages/Home/PrimeiraParte/HomePrimeiraParte'
+import { RouterProvider } from 'react-router-dom'
+import router from './router'
 
 function App() {
 
   return (
     <>
-      <HomePrimeira/>
+      <RouterProvider router={router}/>
     </>
   )
 }
