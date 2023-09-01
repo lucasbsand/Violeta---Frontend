@@ -14,8 +14,8 @@ export default function Register() {
                 <S.FormContainer>
                     <S.Input type="text" placeholder="Insira o seu username..."/>
                     <S.Input type="email" placeholder="Insira o seu email..."/>
-                    <S.Input type="senha" placeholder="Insira a sua senha..."/>
-                    <S.Input type="senha" placeholder="Repita a sua senha..."/>
+                    <S.Input type="password" placeholder="Insira a sua senha..."/>
+                    <S.Input type="password" placeholder="Repita a sua senha..."/>
                     <S.SubmitButton type="submit">CRIAR CONTA</S.SubmitButton>
                 </S.FormContainer>
                 <S.LinkTo to="/login">Já tem conta? Faça o login!</S.LinkTo>
