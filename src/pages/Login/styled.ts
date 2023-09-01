@@ -12,12 +12,26 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #111010;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
   }
 
   #root {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 30px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 `;

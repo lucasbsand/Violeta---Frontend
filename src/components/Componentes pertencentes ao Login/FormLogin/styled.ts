@@ -1,8 +1,13 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ContainerPai = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: auto;
   height: auto;
+  animation: fadein .3s forwards;
 `;
 
 export const FormContainer = styled.form`
@@ -71,7 +76,7 @@ export const SubmitButton = styled.button`
   letter-spacing: 1.7px;
 `;
 
-export const LinkTo = styled.p`
+export const LinkTo = styled(Link)`
   color: #fff;
   text-align: center;
   font-family: Esteban;
