@@ -8,7 +8,7 @@ export default function FormLogin() {
       <S.FormContainer>
         <S.Input placeholder='Insira o seu email/username...' required />
         <S.Input type='password' placeholder='Insira a sua senha... ' required />
-        <S.SubmitButton type='submit'>ENTRAR</S.SubmitButton>
+        <S.SubmitButton type='submit' to="/dashboard">ENTRAR</S.SubmitButton>
       </S.FormContainer>
       <S.LinkTo to="/register">Ainda sem conta? Se registre!</S.LinkTo>
     </S.ContainerPai>

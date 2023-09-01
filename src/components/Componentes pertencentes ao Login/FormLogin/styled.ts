@@ -58,22 +58,19 @@ export const Input = styled.input`
   }
 `;
 
-export const SubmitButton = styled.button`
-  margin-top: 10px;
-  width: 223px;
-  height: 69px;
-  flex-shrink: 0;
-  border-radius: 50px;
-  border: none;
-  background: #f1d261;
-  color: #000;
-  text-align: center;
-  font-family: Esteban;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1.7px;
+export const SubmitButton = styled(Link)`
+ text-decoration: none;
+ color: #000;
+ font-family: Esteban;
+ font-size: 20px;
+ 
+ border-radius: 50px;
+ background: #F1D261;
+ text-align: center;
+ padding-left: 66px;
+ padding-right: 66px;
+ padding-top: 20px;
+ padding-bottom: 20px;
 `;
 
 export const LinkTo = styled(Link)`

@@ -9,7 +9,6 @@ import LineImage from './assets/Line 4.svg'
 import IdeiaImage from './assets/thought-bubble-svgrepo-com 1.svg'
 import Footer from '../../../components/Componentes pertencentes ao Login/Footer'
 
-
 function PostsUsuario() {
     return (
         <>
@@ -26,38 +25,39 @@ function PostsUsuario() {
                         </Line>
                         <li><Links to="#">Outras Postagens</Links></li>
                     </ul>
+                    
                     <UsuarioPerfil><img src={Logo_Link_Perfil}/></UsuarioPerfil>
                 </Header>
                 <main>
                     <Container>
                         {Posts.length > 0 ? Posts.map((post, index) => (
-                         <Card_True_Content key={index}>
-                          <TitlePost>
-                           {post.title}
-                          </TitlePost>
-                           <LinePost/>
-                          <TextPost>
-                           {post.text}
-                          </TextPost>
-                          <Image_Custom>
-                           <img src={post.img}/>
-                          </Image_Custom>
-                         </Card_True_Content>
+                            <Card_True_Content key={index}>
+                                <TitlePost>
+                                    {post.title}
+                                </TitlePost>
+                                <LinePost />
+                                <TextPost>
+                                    {post.text}
+                                </TextPost>
+                                <Image_Custom>
+                                    <img src={post.img} />
+                                </Image_Custom>
+                            </Card_True_Content>
                         ))
-                         :
-                        <Card_NullContent>
-                            <IdeiaImagem>
-                              <img src={IdeiaImage} />
-                            </IdeiaImagem>
-                            <p>Ainda sem postagens...</p>
-                            <ButtonCriarPostagens>
-                              CRIAR POSTAGEM
-                            </ButtonCriarPostagens>
-                        </Card_NullContent>}
+                            :
+                            <Card_NullContent>
+                                <IdeiaImagem>
+                                    <img src={IdeiaImage} />
+                                </IdeiaImagem>
+                                <p>Ainda sem postagens...</p>
+                                <ButtonCriarPostagens>
+                                    CRIAR POSTAGEM
+                                </ButtonCriarPostagens>
+                            </Card_NullContent>}
                     </Container>
                 </main>
-             </Container>
-            {Posts.length > 0 ? "" : <Footer/>}
+            </Container>
+            {Posts.length > 0 ? "" : <Footer />}
         </>
     )
 }

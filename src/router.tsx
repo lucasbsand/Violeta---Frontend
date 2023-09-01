@@ -1,3 +1,4 @@
+import PostsUsuario from './pages/Dashboard/MinhasPostagens/PostsDoUsuario'
 import Home from './pages/Home/PrimeiraParte/HomePage'
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
     {
         path: "/register",
         element: <Register />
-    }
+    },
+    {
+        path: "/dashboard", // Sei que está errado, porem ainda não temos banco
+        element: <PostsUsuario /> // vai fica assim por enquanto
+    },
+
 ])
 
 export default router
