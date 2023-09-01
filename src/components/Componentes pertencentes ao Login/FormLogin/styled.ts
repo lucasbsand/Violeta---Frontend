@@ -7,6 +7,7 @@ export const ContainerPai = styled.div`
   align-items: center;
   width: auto;
   height: auto;
+  animation: fadein .3s forwards;
 `;
 
 export const FormContainer = styled.form`
