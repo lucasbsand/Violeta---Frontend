@@ -59,19 +59,18 @@ export const Input = styled.input`
 `;
 
 export const SubmitButton = styled.button`
- text-decoration: none;
- cursor: pointer;
- color: #000;
- font-family: Esteban;
- font-size: 20px;
- 
- border-radius: 50px;
- background: #F1D261;
- text-align: center;
- padding-left: 66px;
- padding-right: 66px;
- padding-top: 20px;
- padding-bottom: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  font-family: Esteban;
+  font-size: 20px;
+  border-radius: 50px;
+  background: ${(props) => props.disabled ? "#F1D261" : "#a79246"};
+  text-align: center;
+  padding-left: 66px;
+  padding-right: 66px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 export const LinkTo = styled(Link)`
@@ -86,3 +85,59 @@ export const LinkTo = styled(Link)`
   text-decoration-line: underline;
   margin-top: 23px;
 `;
+
+
+// Cardzinho de verificação de Login
+export const Notification = styled.figure`
+ @keyframes fadein {
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ }
+ 
+ position: absolute;
+ right: 0;
+ bottom: 0;
+ width: max-content;
+ border-radius: 6px;
+ background-color: #2b2b2b;
+ color: #fff;
+ font-family: 'Roboto';
+ box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+ transform:translateY(30px);
+ opacity: 0;
+ visibility: hidden;
+ animation: fadein 3s linear;
+`
+
+export const Notification__body = styled.div`
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding: 16px 8px;
+`
+
+export const Notification__progress = styled.div`
+  @keyframes progress {
+  to {
+    transform: scaleX(1);
+  }
+ }
+ 
+ position: absolute;
+ left: 4px;
+ bottom: 4px;
+ width: calc(100% - 8px);
+ height: 3px;
+ transform: scaleX(0);
+ transform-origin: left;
+ background: linear-gradient(to right, #6525af, #9148e4);
+ border-radius: inherit;
+ animation: progress 2.5s 0.3s linear;
+`
