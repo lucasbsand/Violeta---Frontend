@@ -60,12 +60,12 @@ export const Input = styled.input`
 
 export const SubmitButton = styled.button`
   text-decoration: none;
-  cursor: pointer;
+  cursor: ${(props) => props.disabled ? "not-allowed" : null};
   color: #000;
   font-family: Esteban;
   font-size: 20px;
   border-radius: 50px;
-  background: ${(props) => props.disabled ? "#F1D261" : "#a79246"};
+  background: ${(props) => props.disabled ? "#a79246" : "#F1D261"};
   text-align: center;
   padding-left: 66px;
   padding-right: 66px;
