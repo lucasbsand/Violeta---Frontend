@@ -25,7 +25,7 @@ export default function FormLogin() {
       <S.FormContainer onSubmit={HandleSubmit}>
         <S.Input value={email} type="email" onChange={HandleEmail} placeholder='Insira o seu email/username...' />
         <S.Input value={password} type='password' onChange={HandlePassword} placeholder='Insira a sua senha... ' />
-        <S.SubmitButton type='submit' disabled={password.length > 8 || password.length < 1}>ENTRAR</S.SubmitButton> 
+        <S.SubmitButton type='submit' disabled={password.length > 8 || password.length == 0}>ENTRAR</S.SubmitButton> 
         {password.length > 8 ? (
           <Notification>
             <Notification__body>
