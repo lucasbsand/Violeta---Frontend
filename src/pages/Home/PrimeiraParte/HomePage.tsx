@@ -1,6 +1,5 @@
 import HomeSegunda from '../SegundaParte/HomeSegundaParte'
 import HomeTerceira from '../TerceiraParte/HomeTerceiraParte'
-
 import { PaiContainer, LeftContainer, Title, ButtonComecar, RightContainer, Container, Logo } from './HomeStyle'
 import { PrimeiraColuna, SegundaColuna } from './HomeStyle'
 import LogoImage from '../../../assets/ghost 1.svg'

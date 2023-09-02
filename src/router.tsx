@@ -1,4 +1,5 @@
 import PostsUsuario from './pages/Dashboard/MinhasPostagens/PostsDoUsuario'
+import MeusLikes from './pages/Dashboard/MeusDados/MeusLikesPerfil' 
 import Home from './pages/Home/PrimeiraParte/HomePage'
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -7,7 +8,7 @@ import { createBrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />
+        element: <MeusLikes/>
     },
     {
         path: "/login",
