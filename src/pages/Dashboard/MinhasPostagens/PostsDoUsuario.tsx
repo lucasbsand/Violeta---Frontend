@@ -25,8 +25,8 @@ function PostsUsuario() {
                         </Line>
                         <li><Links to="#">Outras Postagens</Links></li>
                     </ul>
-                    
-                    <UsuarioPerfil><img src={Logo_Link_Perfil}/></UsuarioPerfil>
+
+                    <UsuarioPerfil to="#"><img src={Logo_Link_Perfil} /></UsuarioPerfil>
                 </Header>
                 <main>
                     <Container>
@@ -42,14 +42,13 @@ function PostsUsuario() {
                                 <Image_Custom>
                                     <img src={post.img} />
                                 </Image_Custom>
-                            </Card_True_Content>
-                        ))
+                            </Card_True_Content>))
                             :
                             <Card_NullContent>
                                 <IdeiaImagem>
                                     <img src={IdeiaImage} />
                                 </IdeiaImagem>
-                                <p>Ainda sem postagens...</p>
+                                 <p>Ainda sem postagens...</p>
                                 <ButtonCriarPostagens>
                                     CRIAR POSTAGEM
                                 </ButtonCriarPostagens>

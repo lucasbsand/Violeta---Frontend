@@ -58,8 +58,9 @@ export const Input = styled.input`
   }
 `;
 
-export const SubmitButton = styled(Link)`
+export const SubmitButton = styled.button`
  text-decoration: none;
+ cursor: pointer;
  color: #000;
  font-family: Esteban;
  font-size: 20px;
