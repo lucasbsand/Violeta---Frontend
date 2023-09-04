@@ -8,7 +8,7 @@ import { createBrowserRouter } from 'react-router-dom'
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <MeusLikes/>
+        element: <Home/>,
     },
     {
         path: "/login",
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/register",
-        element: <Register />
+        element: <Register />,
     },
     // {
     //     path: "/dashboard", // Sei que está errado, porem ainda não temos banco

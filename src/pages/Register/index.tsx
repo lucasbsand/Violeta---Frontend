@@ -1,3 +1,4 @@
+import { IoIosClose } from "react-icons/io";
 import React, { useState } from "react";
 import Footer from "../../components/Componentes pertencentes ao Login/Footer";
 import Header from "../../components/Componentes pertencentes ao Login/Header";
@@ -45,7 +46,7 @@ export default function Register() {
                     {password.length != confirmPassword.length ? (
                       <S.Notification_register>
                          <S.Notification__body_register>
-                           As senhas não coincidem
+                          <IoIosClose/> As senhas não coincidem
                           </S.Notification__body_register>
                         <S.Notification__progress_register></S.Notification__progress_register>
                       </S.Notification_register>
@@ -54,7 +55,7 @@ export default function Register() {
                     {password.length > 8 ? (
                       <S.Notification_register>
                          <S.Notification__body_register>
-                           A senha não pode ter mais de 8 carácteres
+                         <IoIosClose/> A senha não pode ter mais de 8 carácteres
                           </S.Notification__body_register>
                         <S.Notification__progress_register></S.Notification__progress_register>
                       </S.Notification_register>

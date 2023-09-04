@@ -1,7 +1,5 @@
 import { useState } from "react";
-// import { IoIosClose } from "react-icons/io";
-import { Notification, Notification__body, Notification__progress } from './styled'
-import * as S from "./styled";
+import * as S from "./styled"; // Suponho que suas classes CSS estão importadas aqui
 
 export default function FormLogin() {
   const [email, setEmail] = useState("");
@@ -23,21 +21,13 @@ export default function FormLogin() {
     <S.ContainerPai>
       <S.Titulo>LOGIN</S.Titulo>
       <S.FormContainer onSubmit={HandleSubmit}>
-        <S.Input value={email} type="email" onChange={HandleEmail} placeholder='Insira o seu email/username...' />
+        <S.Input value={email} type="email" onChange={HandleEmail} placeholder='Insira o seu email...' />
         <S.Input value={password} type='password' onChange={HandlePassword} placeholder='Insira a sua senha... ' />
-        <S.SubmitButton type='submit' disabled={password.length > 8 || password.length == 0}>ENTRAR</S.SubmitButton> 
-        {password.length > 8 ? (
-          <Notification>
-            <Notification__body>
-              A Senha declarada não é válida 
-            </Notification__body>
-            <Notification__progress></Notification__progress>
-          </Notification>
-        ) : null}
+        <S.SubmitButton type='submit' disabled={password.length > 8 || password.length === 0}>
+          ENTRAR
+        </S.SubmitButton>
       </S.FormContainer>
       <S.LinkTo to="/register">Ainda sem conta? Se registre!</S.LinkTo>
     </S.ContainerPai>
   );
-  
-
 }

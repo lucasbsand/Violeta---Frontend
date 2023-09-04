@@ -15,7 +15,7 @@ function PostsUsuario() {
             <Container>
                 <Header>
                     <Logo>
-                        <img src={LogoImage} />
+                        <img src={LogoImage}/>
                     </Logo>
 
                     <ul>
@@ -28,6 +28,7 @@ function PostsUsuario() {
 
                     <UsuarioPerfil to="#"><img src={Logo_Link_Perfil} /></UsuarioPerfil>
                 </Header>
+
                 <main>
                     <Container>
                         {Posts.length > 0 ? Posts.map((post, index) => (
