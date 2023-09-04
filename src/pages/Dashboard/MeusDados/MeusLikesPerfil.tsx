@@ -1,9 +1,12 @@
 import { PaiContainer, SecondLinks } from './MeusLikesStyle'
 import { Logo } from '../../Home/PrimeiraParte/HomeStyle'
-import {LeftContainer, RightContainer} from './MeusLikesStyle'
+import { LeftContainer, RightContainer, TitleCard, ParagraphCard } from './MeusLikesStyle'
 import { Line } from '../MinhasPostagens/PostsStyle'
 import { Container, Header, Links, UsuarioPerfil } from '../MinhasPostagens/PostsStyle'
+import { CardLikes } from './Data/MeusLikesData'
+
 import Logo_Link_Perfil from '../MinhasPostagens/assets/profile 1.svg'
+import IdeiaImage from '../MinhasPostagens/assets/thought-bubble-svgrepo-com 1.svg'
 import LogoImage from '../../../assets/ghost 1.svg'
 import LineImage from '../MinhasPostagens/assets/Line 4.svg'
 
@@ -38,7 +41,7 @@ function MeusLikes() {
               </ul>
             </LeftContainer>
             <RightContainer>
-             { /* Vou esganar o lucas*/}
+
             </RightContainer>
           </PaiContainer>
         </main>

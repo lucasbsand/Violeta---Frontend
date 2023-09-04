@@ -140,6 +140,3 @@ export const LinePost = styled.hr`
  width: 100%;
 `
     
-
-
-// Components do post

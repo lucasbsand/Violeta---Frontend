@@ -15,7 +15,7 @@ function PostsUsuario() {
             <Container>
                 <Header>
                     <Logo>
-                        <img src={LogoImage}/>
+                        <img src={LogoImage} />
                     </Logo>
 
                     <ul>
@@ -49,7 +49,7 @@ function PostsUsuario() {
                                 <IdeiaImagem>
                                     <img src={IdeiaImage} />
                                 </IdeiaImagem>
-                                 <p>Ainda sem postagens...</p>
+                                <p>Ainda sem postagens...</p>
                                 <ButtonCriarPostagens>
                                     CRIAR POSTAGEM
                                 </ButtonCriarPostagens>
