@@ -6,5 +6,9 @@ interface CardLikesType {
 }
 
 export const CardLikes: CardLikesType[] = [
-  
+  {
+    title: "SAMPLE TITLE",
+    paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+    icon_like: `${HeartImage}`
+  }
 ]

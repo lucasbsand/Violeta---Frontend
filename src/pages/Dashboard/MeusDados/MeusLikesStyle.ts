@@ -37,7 +37,7 @@ export const TitleCard = styled.h2`
     font-family: Haettenschweiler;
     src: url('/Haettenschweiler Regular.ttf');
  }
-
+ 
  color: #FFF;
  text-align: start;
  font-family: Haettenschweiler;
@@ -49,12 +49,75 @@ export const TitleCard = styled.h2`
  letter-spacing: 0.17rem;
 `
 
-export const RightContainer = styled.div`
+export const ParagraphCard = styled.p`
+ width: 29.6875rem;
+ height: 5.3125rem;
+ flex-shrink: 0;
+ color: #FFF;
+ font-family: Esteban;
+ font-size: 0.9375rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 0.07969rem;
+`
+
+export const FullContent = styled.div`
  
 `
 
-export const ParagraphCard = styled.p`
+export const CardContent = styled.div`
  
+`
+
+export const InternalCard = styled.div`
+ 
+`
+
+export const RightContainer = styled.div`
+ display: flex;
+ justify-content: center;
+ align-items: center;
 `
 
 //Caso o card não receba nada
+export const NullContent = styled.div`
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+`
+
+export const ButtoVerPostagens = styled(Link)`
+ width: 15.6875rem;
+ height: 4.3125rem;
+ flex-shrink: 0;
+ border-radius: 3.125rem;
+ border: 1px solid #000;
+ background: #F1D261;
+ text-decoration: none;
+ color: #000;
+ text-align: center;
+ padding: 19px;
+
+ font-family: Esteban;
+ font-size: 1.25rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 0.10625rem;
+`
+
+export const TitleNullContent = styled.h2`
+ width: 43.75rem;
+ margin-bottom: 15px;
+ color: #FFF;
+ text-align: center;
+ 
+ font-family: Esteban;
+ font-size: 2.8125rem;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+ letter-spacing: 0.23906rem;
+ opacity: 0.5;
+`

@@ -1,6 +1,6 @@
-import { PaiContainer, SecondLinks } from './MeusLikesStyle'
+import { ButtoVerPostagens, ButtonLike, CardContent, InternalCard, PaiContainer, SecondLinks, TitleNullContent } from './MeusLikesStyle'
 import { Logo } from '../../Home/PrimeiraParte/HomeStyle'
-import { LeftContainer, RightContainer, TitleCard, ParagraphCard } from './MeusLikesStyle'
+import { LeftContainer, RightContainer, FullContent, NullContent, TitleCard, ParagraphCard } from './MeusLikesStyle'
 import { Line } from '../MinhasPostagens/PostsStyle'
 import { Container, Header, Links, UsuarioPerfil } from '../MinhasPostagens/PostsStyle'
 import { CardLikes } from './Data/MeusLikesData'
@@ -41,7 +41,32 @@ function MeusLikes() {
               </ul>
             </LeftContainer>
             <RightContainer>
-
+             {CardLikes.length > 0 ? (
+               CardLikes.map((card, index) => (
+                <FullContent>
+                  <CardContent>
+                    <InternalCard key={index}>
+                      <TitleCard>
+                       {card.title}
+                      </TitleCard>
+                      <ParagraphCard>
+                       {card.paragraph}
+                      </ParagraphCard>
+                       <img src={card.icon_like}/>
+                    </InternalCard>
+                  </CardContent>
+                </FullContent>
+              ))) : (
+                <NullContent>
+                  <img src={IdeiaImage}/>
+                  <TitleNullContent>
+                   Você ainda não curtiu nenhuma postagen...
+                  </TitleNullContent>
+                 <ButtoVerPostagens to="#">
+                   Ver postagens
+                 </ButtoVerPostagens>
+                </NullContent>
+              )}
             </RightContainer>
           </PaiContainer>
         </main>
