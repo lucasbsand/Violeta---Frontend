@@ -30,6 +30,12 @@ export const PrimeiraColuna = styled.div`
  width: 254px;
  height: 259px;
  flex-shrink: 0;
+
+  img {
+    width: 254px;
+    height: 259px;
+    border-radius: 8px;
+  }
 `
 
 export const CadeadoImg = styled.div`
@@ -62,6 +68,11 @@ export const SegundaColuna = styled.div`
  width: 254px;
  height: 259px;
  flex-shrink: 0;
+ img {
+    width: 254px;
+    height: 259px;
+    border-radius: 8px;
+  }
 `
 export const LeftContainer = styled.div`
  display: flex;

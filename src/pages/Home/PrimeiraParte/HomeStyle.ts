@@ -40,17 +40,59 @@ export const RightContainer = styled.div`
 `
 
 export const PrimeiraColuna = styled.div`
+ @keyframes anim {
+  0% {
+    transform: translateY(0.875rem);
+  }
+
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(0.875rem);
+  }
+ }
+ 
+ box-shadow: 0px 14px 33px 4px rgba(0,0,0,0.33);
  width: 267px;
  height: 477px;
  flex-shrink: 0;
  background: #444;
+ border-radius: 8px;
+ animation: anim 3.9s infinite;
+ transition: 0.5s all;
+
+  img {
+    border-radius: 8px;
+  }
 `
 export const SegundaColuna = styled.div`
+ @keyframes anim {
+  0% {
+    transform: translateY(0.875rem);
+  }
+
+  50% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(0.875rem);
+   }
+ }
+
+ box-shadow: 0px 14px 33px 4px rgba(0,0,0,0.33);
  width: 267px;
  height: 477px;
  flex-shrink: 0;
  margin-top: -80px;
  background: #444;
+ border-radius: 8px;
+ animation: anim 3.9s infinite;
+ transition: 0.5s all;
+
+ img {
+    border-radius: 8px;
+  }
 `
 
 export const Title = styled.h1`
