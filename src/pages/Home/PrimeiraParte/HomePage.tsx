@@ -10,11 +10,11 @@ function Home() {
     return (
         <>
             <Container>
-                <Logo>
-                    <img src={LogoImage} />
-                </Logo>
                 <PaiContainer>
                     <LeftContainer>
+                        <Logo>
+                            <img src={LogoImage} />
+                        </Logo>
                         <Title>SE EXPRESSE<br></br>SEM LIMITES</Title>
                         <ButtonComecar to="/login">Começar</ButtonComecar>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -30,10 +30,10 @@ function Home() {
                     </RightContainer>
                 </PaiContainer>
             </Container>
-
+{/* 
             <HomeSegunda />
 
-            <HomeTerceira />
+            <HomeTerceira /> */}
         </>
     )
 }
